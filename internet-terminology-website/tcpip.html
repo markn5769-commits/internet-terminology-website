@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>World Wide Web (WWW)</title>
+<title>TCP/IP</title>
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -58,7 +58,7 @@ nav{
     padding:40px;
 }
 
-/* CONTENT */
+/* CONTENT BOX */
 .content-box{
     background:white;
     padding:25px;
@@ -108,23 +108,38 @@ img{
     <div class="main">
 
         <div class="content-box">
-            <h1>World Wide Web (WWW)</h1>
-            <p><strong>Definition:</strong> The World Wide Web is a system of interconnected web pages and resources that are accessed through the internet using web browsers.</p>
+            <h1>Transmission Control Protocol / Internet Protocol (TCP/IP)</h1>
+            <p><strong>Definition:</strong> TCP/IP is a set of communication protocols used to connect devices over the internet and enable data transmission between them.</p>
         </div>
 
         <div class="content-box">
             <h2>How It Works</h2>
-            <p>The World Wide Web allows users to access information through websites. When you enter a URL into a browser, the browser sends a request to a web server using HTTP. The server then sends back the requested web page, which is displayed on your screen.</p>
+            <p>
+                TCP/IP works by breaking data into small packets before sending them across a network. 
+                The Transmission Control Protocol (TCP) ensures that all packets arrive correctly and in order, 
+                while the Internet Protocol (IP) is responsible for addressing and routing each packet to the correct destination.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h2>Key Components</h2>
+            <ul>
+                <li><strong>TCP:</strong> Ensures reliable data delivery</li>
+                <li><strong>IP:</strong> Handles addressing and routing</li>
+            </ul>
         </div>
 
         <div class="content-box">
             <h2>Example</h2>
-            <p>When you visit a website like Google or YouTube, you are using the World Wide Web to access information and services online.</p>
+            <p>
+                When you open a website, your device uses TCP/IP to send a request to the server. 
+                The server then sends back the website data in packets, which are reassembled by your device.
+            </p>
         </div>
 
         <div class="content-box">
             <h2>Diagram</h2>
-            <img src="images/example.jpg" alt="Diagram">
+            <img src="images/tcpip.jpg" alt="TCP/IP Diagram">
         </div>
 
     </div>
