@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNS</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+}
+
+/* TOP BAR */
+nav{
+    background:#1e2a38;
+    color:white;
+    padding:15px 30px;
+    position:fixed;
+    width:100%;
+    top:0;
+}
+
+/* LAYOUT */
+.layout{
+    display:flex;
+    margin-top:70px;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:260px;
+    background:#ffffff;
+    height:calc(100vh - 70px);
+    overflow-y:auto;
+    border-right:1px solid #ddd;
+    padding:20px;
+}
+
+.sidebar a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:#333;
+    border-radius:6px;
+}
+
+.sidebar a:hover{
+    background:#2f80ed;
+    color:white;
+}
+
+/* MAIN */
+.main{
+    flex:1;
+    padding:40px;
+}
+
+/* CONTENT BOX */
+.content-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+img{
+    margin-top:15px;
+    border-radius:10px;
+    max-width:100%;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>NetTerms</h2>
+</nav>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="www.html">WWW</a>
+        <a href="tcpip.html">TCP/IP</a>
+        <a href="http.html">HTTP</a>
+        <a href="dns.html" style="background:#2f80ed;color:white;">DNS</a>
+        <a href="web-browsers.html">Browsers</a>
+        <a href="web-servers.html">Servers</a>
+        <a href="url.html">URL</a>
+        <a href="intranet.html">Intranet</a>
+        <a href="extranet.html">Extranet</a>
+        <a href="multitier.html">Multitier</a>
+        <a href="ftp.html">FTP</a>
+        <a href="html-language.html">HTML</a>
+        <a href="web1.html">Web 1.0</a>
+        <a href="web2.html">Web 2.0</a>
+        <a href="web3.html">Web 3.0</a>
+        <a href="web4.html">Web 4.0</a>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <div class="content-box">
+            <h1>Domain Name System (DNS)</h1>
+            <p><strong>Definition:</strong> DNS is a system that translates human-readable domain names into IP addresses that computers use to identify each other on the network.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>How It Works</h2>
+            <p>
+                When you type a website address into your browser, DNS servers are used to find the corresponding IP address. 
+                The request goes through multiple DNS servers until the correct IP address is found, allowing your browser to connect to the web server.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>Name Resolution:</strong> Converts domain names into IP addresses</li>
+                <li><strong>Hierarchical System:</strong> Uses multiple levels of servers</li>
+                <li><strong>Fast Lookup:</strong> Quickly retrieves stored addresses</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h2>Example</h2>
+            <p>
+                When you type "google.com" into your browser, DNS translates it into an IP address like 142.250.190.78 so your device can locate the correct server.
+            </p>
+        </div>
+
+        <div class="content-box">
+            <h2>Diagram</h2>
+            <img src="images/dns.jpg" alt="DNS Diagram">
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
